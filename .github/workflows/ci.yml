@@ -1,0 +1,17 @@
+name: CI
+
+on: 
+  pull_request:
+    types: [opened, synchronize, reopened]
+    
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - uses: abatilo/actions-poetry@v2
+    - name: Install dependencies
+      run: poetry install --no-root
+    - name: Check Format
+      run: yapf -r -d .
