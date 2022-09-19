@@ -10,5 +10,6 @@ def generate_wordcloud(text):
         width=800,
         height=600,
         background_color='white',
+        max_words=500,
     ).generate(text)
     wordcloud.to_file('wordcloud.png')
