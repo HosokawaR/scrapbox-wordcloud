@@ -2,3 +2,5 @@
 FONT_PATH =''
 
 SCRAPBOX_PROJECT_NAME = ''
+
+USE_CACHE = false
