@@ -1,2 +1,4 @@
 # If you want to ouput a wordcloud in a language other than English, you need your own font file.
 FONT_PATH =''
+
+SCRAPBOX_PROJECT_NAME = ''
