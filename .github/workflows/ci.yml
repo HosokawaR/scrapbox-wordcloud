@@ -1,7 +1,9 @@
 name: CI
 
-on: [push]
-
+on: 
+  pull_request:
+    types: [opened, synchronize, reopened]
+    
 jobs:
   ci:
     runs-on: ubuntu-latest
