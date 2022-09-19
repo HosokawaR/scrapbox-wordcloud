@@ -11,6 +11,14 @@ unidic = ["unidic"]
 unidic-lite = ["unidic-lite"]
 
 [[package]]
+name = "toml"
+version = "0.10.2"
+description = "Python Library for Tom's Obvious, Minimal Language"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
 name = "unidic-lite"
 version = "1.0.8"
 description = "A small version of UniDic packaged for Python"
@@ -29,7 +37,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "d12494e0d8e99b46048695e7ffabd73b4d290e267ad1abde4f4ffb78b9309322"
+content-hash = "4775facf0dff187f63204de840d0b67391245bca7c24e5add421676465448a8c"
 
 [metadata.files]
 mecab-python3 = [
@@ -54,6 +62,10 @@ mecab-python3 = [
     {file = "mecab_python3-1.0.5-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:91e8ac11ef4440418312dd4f1f200f7957fdc0148bb49dc049264c5d07bed527"},
     {file = "mecab_python3-1.0.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ae1c126cf4982035794042280998066c8b6d26eb89136731078d9105a7070c13"},
     {file = "mecab_python3-1.0.5-cp39-cp39-win_amd64.whl", hash = "sha256:34a196c6a410e57f975ee077d075ac994b94bb6930b04e207e59e7c7521ecb58"},
+]
+toml = [
+    {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
+    {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
 ]
 unidic-lite = [
     {file = "unidic-lite-1.0.8.tar.gz", hash = "sha256:db9d4572d9fdd4d00a97949d4b0741ec480ee05a7e7e2e32f547500dae27b245"},
