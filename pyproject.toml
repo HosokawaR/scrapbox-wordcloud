@@ -12,6 +12,8 @@ python = "^3.10"
 mecab-python3 = "^1.0.5"
 unidic-lite = "^1.0.8"
 yapf = "^0.32.0"
+toml = "^0.10.2"
+wordcloud = "^1.8.2.2"
 
 
 [build-system]
