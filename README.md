@@ -1,4 +1,4 @@
-# Scrapbox Wordcloud Generater
+# Scrapbox Wordcloud Generator
 
 ## What is ?
 
