@@ -4,6 +4,7 @@ from os import path
 from fetch_contents import fetch_from_scrapbox
 from extract_noun import extract_noun
 from generate_wordcloud import generate_wordcloud
+from save_to_storage import save_file
 from config import USE_CACHE
 
 if __name__ == "__main__":
@@ -20,3 +21,4 @@ if __name__ == "__main__":
 
     nouns = extract_noun(page_contents)
     generate_wordcloud(nouns)
+    save_file()
