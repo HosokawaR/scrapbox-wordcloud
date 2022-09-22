@@ -7,7 +7,8 @@ from generate_wordcloud import generate_wordcloud
 from save_to_storage import save_file
 from config import USE_CACHE
 
-if __name__ == "__main__":
+
+def generate_scrapbox_wordcloud(dummy):
     if USE_CACHE and path.exists('page_contents.pickle'):
         print('Loading from pickle.')
         with open('page_contents.pickle', 'rb') as f:
@@ -22,3 +23,9 @@ if __name__ == "__main__":
     nouns = extract_noun(page_contents)
     generate_wordcloud(nouns)
     save_file()
+
+    return 'Done!'
+
+
+if __name__ == "__main__":
+    generate_scrapbox_wordcloud({})
