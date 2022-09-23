@@ -8,7 +8,9 @@ from save_to_storage import save_file
 from config import USE_CACHE
 
 
-def generate_scrapbox_wordcloud(dummy):
+# Cloud Functions calls this function with two arguments 
+# So we need to define two arguments to avoid calling errors
+def generate_scrapbox_wordcloud(data, context):
     if USE_CACHE and path.exists('page_contents.pickle'):
         print('Loading from pickle.')
         with open('page_contents.pickle', 'rb') as f:
@@ -28,4 +30,4 @@ def generate_scrapbox_wordcloud(dummy):
 
 
 if __name__ == "__main__":
-    generate_scrapbox_wordcloud({})
+    generate_scrapbox_wordcloud({}, {})
